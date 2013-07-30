@@ -16,3 +16,7 @@ ark 'polar2grid' do
   owner node['polar2grid']['user']
   action :put
 end
+
+template "/etc/profile.d/polar2grid.sh" do
+  source "polar2grid.sh.erb"
+end

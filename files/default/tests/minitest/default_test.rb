@@ -14,5 +14,9 @@ describe 'polar2grid::default' do
       with(:owner, node['polar2grid']['user']).
       with(:mode, 0755)
   end
+  
+  it 'sets up the polar2grid environment' do
+    file('/etc/profile.d/polar2grid.sh').must_exist.with(:owner, 'root').with(:mode, 0644)
+  end
 
 end
