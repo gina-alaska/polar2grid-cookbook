@@ -17,6 +17,6 @@ ark 'polar2grid' do
   action :put
 end
 
-template "/etc/profile.d/polar2grid.sh" do
-  source "polar2grid.sh.erb"
+template "/etc/profile.d/polar2grid_env.sh" do
+  source "polar2grid_env.sh.erb"
 end
