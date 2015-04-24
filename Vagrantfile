@@ -73,7 +73,7 @@ Vagrant.configure("2") do |config|
   #Depends on chef >=11.6 for ftp handlers for remote_file 
   config.omnibus.chef_version = :latest
   
-  config.vm.provision :chef_solo do |chef|
+  config.vm.provision :chef_client do |chef|
     chef.json = {
       polar2grid: {
         url: ""

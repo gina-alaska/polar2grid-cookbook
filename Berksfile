@@ -1,7 +1,4 @@
-site :opscode
-group :integration do
-  cookbook 'minitest-handler'
-end
+source 'https://supermarket.chef.io'
 
 cookbook 'ark'
 
